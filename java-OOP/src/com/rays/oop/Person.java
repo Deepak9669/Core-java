@@ -6,7 +6,8 @@ public class Person {
 	
 	private String name;
 	private String address;
-	private Date dateOfBirth;
+	private Date dob;
+	public static  int AVG_AGE= 18;
 	
 	
 	public String getName() {
@@ -21,10 +22,18 @@ public class Person {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public Date getDateOfBirth() {
-		return this.dateOfBirth;
+	public Date getDob() {
+		return this.dob;
 	}
-	public void setDateOfBirth(Date dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
+	public void setDob(Date dob) {
+		this.dob= dob;
 	}
+	public int getAge() {
+		
+		Date now = new Date();
+		
+		int age = now.getYear()-dob.getYear();
+		return age;
+	}
+	
 }	
