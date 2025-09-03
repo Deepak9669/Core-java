@@ -1,39 +1,35 @@
-package com.rays.oop;
+package com.rays.oopInheritance;
 
 import java.util.Date;
 
 public class Person {
+	 
 	
 	private String name;
 	private String address;
 	private Date dob;
-	public static  int AVG_AGE= 18;
-	
 	
 	public String getName() {
 		return this.name;
 	}
-	public void setName(String name) {
-     this.name=name;
-}
+	public void setName (String name) {
+		this.name=name;
+	}
 	public String getAddress() {
 		return this.address;
 	}
 	public void setAddress(String address) {
-		this.address = address;
+		this.address=address;
 	}
 	public Date getDob() {
 		return this.dob;
 	}
 	public void setDob(Date dob) {
-		this.dob= dob;
-	}
-	public int getAge() {
+		this.dob =dob;
 		
-		Date now = new Date();
-		
-		int age = now.getYear()-dob.getYear();
-		return age;
+		Date now=new Date();
 	}
 	
-}	
+	
+
+}
