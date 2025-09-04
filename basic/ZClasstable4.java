@@ -8,7 +8,7 @@ public class ZClasstable4 {
 		int n = sc.nextInt();
 		
 		for(int i = 1 ; i<11; i++) {
-		System.out.println(i*13);
+		System.out.println(i*15);
 	}
 	}
 }

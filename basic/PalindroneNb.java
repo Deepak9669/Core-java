@@ -2,7 +2,7 @@ package com.rays.basic;
 
 public class PalindroneNb {
 	public static void main(String[] args) {
-		int n = 161;
+		int n = 162;
 		int r = 0;
 		int sum = 0;
 		int temp = n;
@@ -14,8 +14,8 @@ public class PalindroneNb {
 			temp = temp / 10;
 
 		}
-
-		System.out.println(sum);
+System.out.println("reverse nb of"+n+"is"+sum);
+	System.out.println(sum);
 		if (sum == n) {
 			System.out.println("this is pelendrome number");
 
