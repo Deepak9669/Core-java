@@ -1,4 +1,4 @@
-package com.rays.oop;
+package com.rays.oopEncapsulation;
 
 public class Account {
 	
@@ -43,10 +43,31 @@ public class Account {
 		   }else {
 			   this.balance = this.balance -amount;
 				System.out.println("after withdrawal:"+getBalance());
-
 		   }
-		
 	   }
+	   
+//		   method to transfer funds between account
+		   
+		   public void fundTransfer(Account targetAccount ,double amount) {
+				   if(amount>this.balance){
+					   
+					   System.out.println("insufficent found");
+				   }else {
+//					   withdraw from current account
+					   this.balance=this.balance-amount;
+//					   deposit into target account
+					 
+					   targetAccount.balance=targetAccount.balance+amount;
+					   
+					   System.out.println("transfer"+amount+"from"+this.number+"to"+targetAccount.number);
+					   System.out.println("your nes balance :"+this.getBalance());
+					   System.out.println("recevers new balance :"+targetAccount.getBalance());
+				   }
+		   }
+} 		   
+		   
+		
+	   
 
 
-}
+
