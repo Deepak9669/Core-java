@@ -1,8 +1,10 @@
-package com.rays.oop;
+package com.rays.oopEncapsulation;
 
-import com.rays.oop.Account;;
+import com.rays.oopEncapsulation.Account;;
 
 public class TestAccount {
+	
+
 	public static void main(String[] args) {
 		
 		Account a1 = new Account();
@@ -17,6 +19,7 @@ public class TestAccount {
 		a1.deposit(1000.00);
 		a1.withdrawal(200.00);
 		
+	
 		System.out.println("_____________");
 		
 	    Account Deepak = new Account();
@@ -31,6 +34,8 @@ public class TestAccount {
 	       System.out.println(Deepak.getBalance());
 	       Deepak.deposit(5000.00);
 	       Deepak.withdrawal(5000.00);
+	       
+	       a1.fundTransfer(Deepak, 1000);
 		
 		
 	}
