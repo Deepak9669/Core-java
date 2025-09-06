@@ -10,7 +10,7 @@ public class twoDArray {
 
 				for (int j = 0; j < table.length; j++) {
 
-					table[i][j] = (i + 2) * (j + 2);
+					table[i][j] = (i + 1) * (j + 1);
 
 					System.out.print(table[i][j] + "\t");
 

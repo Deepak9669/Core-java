@@ -2,10 +2,10 @@ package com.rays.basic;
 
 public class FactorialClass {
 	public static void main(String[] args) {
-		int n = 40;
+		int n = 5;
 				
 		 long factorial = 1;
-		 System.out.println(n);
+     	 System.out.println(n);
 		 
 		 
 		 for(int i =1 ; i<=n;i++) {

@@ -2,7 +2,7 @@ package com.rays.basic;
 
 public class PrimeNumber {
 	public static void main(String[] args) {
-		int n = 7;
+		int n = 8;
 		int count = 0;
 		
 		for(int i = 2 ; i<n ; i++) {
