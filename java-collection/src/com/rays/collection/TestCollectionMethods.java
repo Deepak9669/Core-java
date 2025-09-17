@@ -21,7 +21,8 @@ public class TestCollectionMethods {
 		  System.out.println(c1.contains(5.1)); 
 		  System.out.println(c1); 
 		  System.out.println("c1 size :"+c1.size());
-		  System.out.println(c1.remove(true));
+		  c1.remove(true);
+		  System.out.println(c1);
 		  
 		  System.out.println("__________________");
 		  
