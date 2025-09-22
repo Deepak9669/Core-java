@@ -29,7 +29,7 @@ public class Test {
 		list.stream().sorted(Comparator.reverseOrder()).limit(1).forEach(System.out::println);
 		
 		System.out.println("<______________________");
-		list.stream().sorted(Comparator.reverseOrder()).skip(2).limit(1).forEach(System.out::println);
+		list.stream().distinct().skip(1).max(Comparator.reverseOrder()).ifPresent(System.out::println);
 
 
 	}
